@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     ciphertrust = {
-      source = "ThalesGroup/ciphertrust"
+      source  = "ThalesGroup/ciphertrust"
       version = "0.10.4-beta"
     }
 
@@ -35,6 +35,7 @@ module "ec2_instance" {
   tags = {
     Terraform   = "true"
     Environment = "dev"
+    yor_trace   = "16a0b8d9-0fc9-474a-847b-d7f9862882ba"
   }
 }
 

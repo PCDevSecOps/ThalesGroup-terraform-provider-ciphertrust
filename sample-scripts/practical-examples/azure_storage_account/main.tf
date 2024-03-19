@@ -34,6 +34,9 @@ resource "azurerm_storage_account" "storage-account" {
   identity {
     type = "SystemAssigned"
   }
+  tags = {
+    yor_trace = "b7e470a2-f448-4225-9433-c6f4be920406"
+  }
 }
 
 # Create an Azure connection
