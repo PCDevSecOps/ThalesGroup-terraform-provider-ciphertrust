@@ -62,4 +62,7 @@ resource "aws_s3_bucket" "test_bucket" {
       bucket_key_enabled = true
     }
   }
+  tags = {
+    yor_trace = "76942b8f-c52a-4dad-94ef-d1cb6dc4875f"
+  }
 }
